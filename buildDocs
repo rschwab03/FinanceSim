@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
+# Configure and build docs
+mkdir -p build
+cmake -S . -B build
+cmake --build build --target docs
+
+echo "Documentation generated at: build/docs/html/index.html"
