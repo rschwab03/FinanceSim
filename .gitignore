@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+cmake-build-*/
+*.so
+*.pyd
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
