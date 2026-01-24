@@ -3,18 +3,14 @@ name: Build and Deploy Doxygen
 on:
   push:
     branches:
-      - master   # Deploy on push to master
-  pull_request:
-    branches:
-      - master   # Build for PRs targeting master
+      - master
 
 permissions:
   contents: write
 
 jobs:
-  build-docs:
+  doxygen:
     runs-on: ubuntu-latest
-    name: Build Doxygen Docs
 
     steps:
       - name: Checkout repository
@@ -25,19 +21,9 @@ jobs:
 
       - name: Create build directories
         run: mkdir -p build/docs
-        
+
       - name: Build documentation
         run: doxygen Doxyfile
-
-  deploy-docs:
-    runs-on: ubuntu-latest
-    needs: build-docs
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    name: Deploy to GitHub Pages
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
