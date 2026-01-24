@@ -25,6 +25,7 @@ jobs:
 
       - name: Create build directories
         run: mkdir -p build/docs
+        
       - name: Build documentation
         run: doxygen Doxyfile
 
