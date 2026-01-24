@@ -22,6 +22,8 @@ A C++17 financial simulation library with Python bindings via pybind11. Uses an 
 ├── system/             # Python module output (financesim_cpp.so)
 ├── tests/
 │   └── cpp/            # C++ tests
+├── docs/               # Documentation sources
+│   └── mainpage.md     # Doxygen main page
 ├── build/              # CMake build directory (gitignored)
 ├── buildSim            # Build script
 ├── buildDocs           # Documentation build script
@@ -54,3 +56,6 @@ A C++17 financial simulation library with Python bindings via pybind11. Uses an 
 2. Created `buildSim` script for easy building
 3. Added Doxygen framework with CMake integration
 4. Created `buildDocs` script for documentation generation
+5. Added `docs/mainpage.md` - Doxygen front page with architecture overview and TOC for model descriptions
+6. Enabled treeview sidebar navigation in Doxygen
+7. Created MDR placeholder pages: income_models.md, expense_models.md, asset_models.md, liability_models.md
