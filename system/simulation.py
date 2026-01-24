@@ -6,11 +6,10 @@ Handles model lifecycle (initialize, run, finalize) and ensures
 deterministic, replayable execution.
 """
 
+import importlib
 from typing import List, Optional
 from .scheduler import Scheduler
-
-# Will be available after building the C++ module
-# from . import financesim_cpp as cpp
+from . import financesim_cpp as cpp
 
 
 class Simulation:
@@ -23,7 +22,7 @@ class Simulation:
 
     def __init__(self):
         self._scheduler = Scheduler()
-        self._event_bus = None  # cpp.EventBus() after build
+        self._event_bus = cpp.EventBus()
         self._models: List = []
         self._initialized: bool = False
 
@@ -56,6 +55,29 @@ class Simulation:
             raise RuntimeError("Cannot add models after initialization")
         self._models.append(model)
 
+    @property
+    def scenario_name(self) -> str:
+        """Name of the loaded scenario, if any."""
+        return getattr(self, '_scenario_name', 'unnamed')
+
+    @classmethod
+    def from_scenario(cls, scenario_name: str) -> "Simulation":
+        """
+        Create a simulation from a scenario module.
+
+        Args:
+            scenario_name: Name of the scenario module (without .py)
+
+        Returns:
+            Configured Simulation instance with models loaded.
+        """
+        module = importlib.import_module(f"scenarios.{scenario_name}")
+        sim = cls()
+        sim._scenario_name = getattr(module, 'SCENARIO_NAME', scenario_name)
+        for model in module.create_models():
+            sim.add_model(model)
+        return sim
+
     def initialize(self) -> None:
         """
         Initialize all models and prepare for execution.
@@ -65,12 +87,8 @@ class Simulation:
         if self._initialized:
             raise RuntimeError("Simulation already initialized")
 
-        # TODO: Create event bus from C++ module
-        # self._event_bus = cpp.EventBus()
-
         for model in self._models:
-            if self._event_bus:
-                model.initialize(self._event_bus)
+            model.initialize(self._event_bus)
             self._scheduler.register_model(model)
 
         self._initialized = True
@@ -135,3 +153,27 @@ class Simulation:
             self._event_bus.reset()
 
         self._initialized = False
+
+
+def compare_scenarios(scenario_names: List[str], duration: float) -> dict:
+    """
+    Run multiple scenarios and collect results for comparison.
+
+    Args:
+        scenario_names: List of scenario module names to run.
+        duration: How long to run each scenario (in days).
+
+    Returns:
+        Dict mapping scenario name to results dict.
+    """
+    results = {}
+    for name in scenario_names:
+        sim = Simulation.from_scenario(name)
+        sim.initialize()
+        sim.run(duration)
+        results[sim.scenario_name] = {
+            'final_time': sim.current_time,
+            'model_count': len(sim._models),
+        }
+        sim.finalize()
+    return results
