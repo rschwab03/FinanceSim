@@ -7,14 +7,17 @@ PROJECT_BRIEF          = "Financial Simulation Library"
 OUTPUT_DIRECTORY       = build/docs
 
 # Input settings
-INPUT                  = src
+INPUT                  = src docs
 RECURSIVE              = YES
-FILE_PATTERNS          = *.cpp *.hpp *.h
+FILE_PATTERNS          = *.cpp *.hpp *.h *.md
+USE_MDFILE_AS_MAINPAGE = docs/mainpage.md
 
 # Output settings
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
 HTML_OUTPUT            = html
+GENERATE_TREEVIEW      = YES
+TREEVIEW_WIDTH         = 280
 
 # Extraction settings
 EXTRACT_ALL            = YES
