@@ -1,26 +1,26 @@
-#include "models/assets_base.hpp"
+#include "models/expenses/expenses_base.hpp"
 
 namespace financesim {
 
-AssetsBase::AssetsBase(std::string id, std::string name, Schedule schedule)
+ExpensesBase::ExpensesBase(std::string id, std::string name, Schedule schedule)
     : id_(std::move(id))
     , name_(std::move(name))
     , schedule_(schedule) {}
 
-void AssetsBase::initialize(EventBus& bus) {
+void ExpensesBase::initialize(EventBus& bus) {
     bus_ = &bus;
     // TODO: Subscribe to relevant events
 }
 
-void AssetsBase::update(SimTime time) {
+void ExpensesBase::update(SimTime time) {
     // TODO: Implement in derived classes
 }
 
-void AssetsBase::finalize() {
+void ExpensesBase::finalize() {
     // TODO: Cleanup
 }
 
-void AssetsBase::reset() {
+void ExpensesBase::reset() {
     bus_ = nullptr;
     // TODO: Reset state
 }

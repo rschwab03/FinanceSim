@@ -16,18 +16,22 @@ A C++17 financial simulation library with Python bindings via pybind11. Uses an 
 
 ```
 ├── src/
-│   ├── core/           # Core framework (Event, EventBus, Model, Schedule)
-│   ├── models/         # Financial models (Income, Expenses, Assets, Liabilities)
-│   └── bindings/       # pybind11 Python bindings
-├── system/             # Python module output (financesim_cpp.so)
+│   ├── core/               # Core framework (Event, EventBus, Model, Schedule)
+│   ├── models/
+│   │   ├── income/         # Income models (IncomeBase, CareerJob)
+│   │   ├── expenses/       # Expense models (ExpensesBase)
+│   │   ├── assets/         # Asset models (AssetsBase)
+│   │   └── liabilities/    # Liability models (LiabilitiesBase)
+│   └── bindings/           # pybind11 Python bindings
+├── system/                 # Python module output (financesim_cpp.so)
 ├── tests/
-│   └── cpp/            # C++ tests
-├── docs/               # Documentation sources
-│   └── mainpage.md     # Doxygen main page
-├── build/              # CMake build directory (gitignored)
-├── buildSim            # Build script
-├── buildDocs           # Documentation build script
-├── Doxyfile            # Doxygen configuration
+│   └── cpp/                # C++ tests
+├── docs/                   # Documentation sources
+│   └── mainpage.md         # Doxygen main page
+├── build/                  # CMake build directory (gitignored)
+├── buildSim                # Build script
+├── buildDocs               # Documentation build script
+├── Doxyfile                # Doxygen configuration
 └── CMakeLists.txt
 ```
 
@@ -59,3 +63,5 @@ A C++17 financial simulation library with Python bindings via pybind11. Uses an 
 5. Added `docs/mainpage.md` - Doxygen front page with architecture overview and TOC for model descriptions
 6. Enabled treeview sidebar navigation in Doxygen
 7. Created MDR placeholder pages: income_models.md, expense_models.md, asset_models.md, liability_models.md
+8. Added CareerJob income model (semi-monthly salary payments)
+9. Reorganized models/ into subdirectories: income/, expenses/, assets/, liabilities/

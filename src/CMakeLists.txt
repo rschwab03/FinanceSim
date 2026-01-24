@@ -6,10 +6,11 @@ target_include_directories(financesim_core INTERFACE
 
 # Models library
 add_library(financesim_models STATIC
-    models/income_base.cpp
-    models/expenses_base.cpp
-    models/assets_base.cpp
-    models/liabilities_base.cpp
+    models/income/income_base.cpp
+    models/income/career_job.cpp
+    models/expenses/expenses_base.cpp
+    models/assets/assets_base.cpp
+    models/liabilities/liabilities_base.cpp
 )
 target_link_libraries(financesim_models PUBLIC financesim_core)
 
