@@ -30,6 +30,9 @@ Immutable messages that carry information between models. Events are timestamped
 
 ## Table of Contents
 
+### Getting Started
+- @subpage building_and_running "Building and Running"
+
 ### Core Framework
 - @ref financesim::EventBus "EventBus" - Central pub/sub message system
 - @ref financesim::Model "Model" - Base interface for all models
