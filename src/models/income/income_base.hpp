@@ -25,7 +25,7 @@ protected:
 
     template<typename EventType, typename... Args>
     void emit(SimTime time, Args&&... args) {
-        auto event = std::make_shared<EventType>(
+        std::shared_ptr<const EventType> event = std::make_shared<EventType>(
             time, id_, std::forward<Args>(args)...
         );
         bus_->publish(event);

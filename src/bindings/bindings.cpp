@@ -6,10 +6,11 @@
 #include "core/event.hpp"
 #include "core/event_bus.hpp"
 #include "core/model.hpp"
-#include "models/income_base.hpp"
-#include "models/expenses_base.hpp"
-#include "models/assets_base.hpp"
-#include "models/liabilities_base.hpp"
+#include "models/income/income_base.hpp"
+#include "models/income/career_job.hpp"
+#include "models/expenses/expenses_base.hpp"
+#include "models/assets/assets_base.hpp"
+#include "models/liabilities/liabilities_base.hpp"
 
 namespace py = pybind11;
 using namespace financesim;
@@ -80,6 +81,12 @@ PYBIND11_MODULE(financesim_cpp, m) {
     // Base model classes
     py::class_<IncomeBase, Model, std::shared_ptr<IncomeBase>>(m, "IncomeBase")
         .def(py::init<std::string, std::string, Schedule>());
+
+    py::class_<CareerJob, IncomeBase, std::shared_ptr<CareerJob>>(m, "CareerJob")
+        .def(py::init<std::string, std::string, double, SimTime>(),
+             py::arg("id"), py::arg("name"), py::arg("annual_salary"), py::arg("start_day") = 0.0)
+        .def("annual_salary", &CareerJob::annual_salary)
+        .def("payment_amount", &CareerJob::payment_amount);
 
     py::class_<ExpensesBase, Model, std::shared_ptr<ExpensesBase>>(m, "ExpensesBase")
         .def(py::init<std::string, std::string, Schedule>());
