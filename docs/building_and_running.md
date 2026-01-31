@@ -141,7 +141,41 @@ sim.finalize()
 
 ### Using Scenarios
 
-Scenarios provide pre-configured simulation setups:
+Scenarios provide pre-configured simulation setups. The easiest way to run them is with the command-line runner.
+
+### Command-Line Runner
+
+The `run_scenario.py` script provides a simple way to run scenarios from the terminal:
+
+```bash
+# List available scenarios
+./run_scenario.py --list
+
+# Run a scenario for 1 year (default: 365 days)
+./run_scenario.py early_career
+
+# Run with verbose output (shows all events)
+./run_scenario.py early_career -v
+
+# Run for a custom duration (e.g., 5 years)
+./run_scenario.py early_career -d 1825
+
+# Compare multiple scenarios side-by-side
+./run_scenario.py early_career senior_engineer
+```
+
+**Command-line options:**
+
+| Option | Description |
+|--------|-------------|
+| `--list` | List all available scenarios |
+| `-d, --duration` | Simulation duration in days (default: 365) |
+| `-v, --verbose` | Show detailed event log |
+| `-h, --help` | Show help message |
+
+### Scenarios via Python API
+
+For more control, load scenarios directly in Python:
 
 ```python
 from system.simulation import Simulation, compare_scenarios
