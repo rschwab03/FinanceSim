@@ -1,6 +1,6 @@
 # FinanceSim Project Summary
 
-**Last updated:** 2026-01-24
+**Last updated:** 2026-01-30
 
 ## Project Overview
 
@@ -16,16 +16,18 @@ A C++17 financial simulation library with Python bindings via pybind11. Uses an 
 
 ```
 ├── src/
-│   ├── core/               # Core framework (Event, EventBus, Model, Schedule)
+│   ├── core/               # Core framework (Event, EventBus, Model, Schedule, Logger)
 │   ├── models/
 │   │   ├── income/         # Income models (IncomeBase, CareerJob)
 │   │   ├── expenses/       # Expense models (ExpensesBase)
 │   │   ├── assets/         # Asset models (AssetsBase)
-│   │   └── liabilities/    # Liability models (LiabilitiesBase)
+│   │   ├── liabilities/    # Liability models (LiabilitiesBase)
+│   │   └── accounts/       # Account models (CheckingAccount, SavingsAccount)
 │   └── bindings/           # pybind11 Python bindings
 ├── system/                 # Python module output (financesim_cpp.so)
 ├── tests/
 │   └── cpp/                # C++ tests
+├── scenarios/              # Simulation scenarios
 ├── docs/                   # Documentation sources
 │   └── mainpage.md         # Doxygen main page
 ├── build/                  # CMake build directory (gitignored)
@@ -39,8 +41,69 @@ A C++17 financial simulation library with Python bindings via pybind11. Uses an 
 
 - **EventBus:** Central pub/sub system for model communication
 - **Model:** Base class with lifecycle methods (initialize, update, finalize, reset)
-- **Events:** IncomeEvent, ExpenseEvent, AssetEvent, LiabilityEvent
-- **Base Models:** IncomeBase, ExpensesBase, AssetsBase, LiabilitiesBase
+- **Logger:** Service that subscribes to EventBus and writes events to configured writers
+- **Events:** IncomeEvent, ExpenseEvent, AssetEvent, LiabilityEvent, AccountEvent, TransferEvent
+- **Base Models:** IncomeBase, ExpensesBase, AssetsBase, LiabilitiesBase, AccountBase
+
+## Logging Framework
+
+The Logger is a service (not a Model) that subscribes to all events via EventBus:
+
+```python
+from system.financesim_cpp import Logger, ConsoleWriter, JsonWriter, LogLevel
+
+logger = Logger()
+logger.set_level(LogLevel.INFO)
+logger.add_writer(ConsoleWriter())
+logger.add_writer(JsonWriter("simulation.jsonl"))
+logger.attach(sim.event_bus)
+# ... run simulation ...
+logger.flush()
+logger.detach()
+```
+
+Features:
+- **Log levels:** DEBUG, INFO, WARN, ERROR
+- **Writers:** ConsoleWriter (stdout), JsonWriter (JSONL file)
+- **Filtering:** By event type, source ID, time range
+
+## Account Models
+
+Accounts are reactive models that subscribe to IncomeEvent and ExpenseEvent:
+
+```python
+from system.financesim_cpp import CheckingAccount, SavingsAccount, Schedule
+
+checking = CheckingAccount("checking1", "Primary", initial_balance=5000.0)
+savings = SavingsAccount("savings1", "High-Yield", apy=0.045, initial_balance=10000.0)
+```
+
+### Schedule Configuration
+
+Accounts accept an optional `Schedule` parameter for customizing update behavior:
+
+```python
+# Daily interest compounding instead of monthly
+daily_schedule = Schedule()
+daily_schedule.rate = 1.0  # Update every day
+
+savings = SavingsAccount("savings1", "Daily Savings", apy=0.045,
+                         initial_balance=10000.0, schedule=daily_schedule)
+```
+
+Default schedules:
+- **CheckingAccount:** `rate=0` (event-driven only, no periodic updates)
+- **SavingsAccount:** `rate=30` (monthly interest calculation)
+
+### Routing Mechanism
+
+Income/expense events have an optional `target_account` field:
+- If empty, routes to account with `routing_tag = "default"` (CheckingAccount default)
+- If specified, routes to account with matching `routing_tag`
+
+Account types:
+- **CheckingAccount:** Default income recipient, no interest
+- **SavingsAccount:** Earns APY interest, compounded monthly
 
 ## Git Branches
 
@@ -65,3 +128,10 @@ A C++17 financial simulation library with Python bindings via pybind11. Uses an 
 7. Created MDR placeholder pages: income_models.md, expense_models.md, asset_models.md, liability_models.md
 8. Added CareerJob income model (semi-monthly salary payments)
 9. Reorganized models/ into subdirectories: income/, expenses/, assets/, liabilities/
+10. Added Logging Framework (Logger, LogLevel, ConsoleWriter, JsonWriter)
+11. Added Account Models (AccountBase, CheckingAccount, SavingsAccount)
+12. Added AccountEvent and TransferEvent types
+13. Added target_account field to IncomeEvent and ExpenseEvent for routing
+14. Account models use Schedule struct for configurable update rates
+15. Updated scheduler to skip models with rate <= 0 (event-driven only)
+16. Created `scenarios/with_accounts.py` test scenario
