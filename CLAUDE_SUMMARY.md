@@ -1,6 +1,10 @@
 # FinanceSim Project Summary
 
+<<<<<<< HEAD
 **Last updated:** 2026-02-01
+=======
+**Last updated:** 2026-01-30
+>>>>>>> master
 
 ## Project Overview
 
