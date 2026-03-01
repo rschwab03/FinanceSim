@@ -71,9 +71,38 @@ class Scheduler:
             del self._models[model_id]
             # Note: stale entries in event_queue are filtered during run
 
+    def schedule_at(self, model, time: float) -> None:
+        """
+        Schedule a model to execute at a specific time.
+
+        This is used for event-triggered scheduling, where a model needs
+        to be called at a future time in response to an event.
+
+        Args:
+            model: The model to schedule.
+            time: The absolute time to execute at.
+        """
+        if time <= self._current_time:
+            return  # Can't schedule in the past
+        if model.id() not in self._models:
+            return  # Model not registered
+
+        heapq.heappush(
+            self._event_queue,
+            ScheduledExecution(time, model.id(), model)
+        )
+
     def _schedule_next_execution(self, model) -> None:
-        """Calculate and schedule the next execution for a model."""
+        """Calculate and schedule the next periodic execution for a model."""
         schedule = model.schedule()
+
+        # Skip models with no periodic schedule (rate <= 0)
+        if schedule.rate <= 0:
+            return
+
+        # Check if already past stop time
+        if schedule.stop_time >= 0 and self._current_time >= schedule.stop_time:
+            return  # Model has finished
 
         # Determine next execution time
         if self._current_time < schedule.start_time:
