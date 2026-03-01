@@ -1,0 +1,13 @@
+<map id="financesim::SavingsAccount::accrue_interest_up_to" name="financesim::SavingsAccount::accrue_interest_up_to">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,209,109"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1AccountBase.html#a98c0d8ec369cda419aea938372d0dcbc" title="Get current balance." alt="" coords="257,5,443,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,67,260,46,261,51,185,72"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1AccountBase.html#a71367336b1187fc22ec0d52e456b8e8a" title="Deposit funds into the account." alt="" coords="257,69,443,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,87,243,87,243,92,209,92"/>
+<area shape="rect" id="Node000004" href="$classfinancesim_1_1AccountBase.html#a92e881e34f26e1b4da68365d6dccdb7b" title=" " alt="" coords="491,99,676,139"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="187,107,258,119,371,125,477,123,477,128,370,130,257,124,186,112"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="443,98,478,103,477,108,443,104"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="542,99,539,89,546,80,561,74,583,72,609,75,623,82,621,87,608,80,583,77,562,79,549,84,545,90,547,98"/>
+<area shape="rect" id="Node000005" href="$classfinancesim_1_1EventBus.html#a94b4690f4c8a00f2e9fd395bfc7a3b4d" title="Publish an event to all subscribers." alt="" coords="724,99,887,139"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="676,116,710,116,710,121,676,121"/>
+</map>

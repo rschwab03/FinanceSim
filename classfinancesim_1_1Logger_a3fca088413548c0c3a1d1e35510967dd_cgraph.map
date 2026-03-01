@@ -1,0 +1,5 @@
+<map id="financesim::Logger::detach" name="financesim::Logger::detach">
+<area shape="rect" id="Node000001" title="Detach from the current EventBus (stops logging)" alt="" coords="5,5,151,45"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1EventBus.html#a951ce440a81e66e80af19bce94e547b3" title="Unsubscribe using subscription ID." alt="" coords="199,5,361,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,23,185,23,185,28,151,28"/>
+</map>

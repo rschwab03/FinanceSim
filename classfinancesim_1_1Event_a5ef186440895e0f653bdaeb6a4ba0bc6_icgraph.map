@@ -1,0 +1,12 @@
+<map id="financesim::Event::type_name" name="financesim::Event::type_name">
+<area shape="rect" id="Node000001" title="Returns the type name of this event (for debugging/logging)" alt="" coords="784,35,931,75"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1Logger.html#ab3ad68dc588095caba42cea9a75a8eab" title=" " alt="" coords="591,5,736,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="770,44,736,39,737,34,771,39"/>
+<area shape="rect" id="Node000005" href="$bindings_8cpp.html#a38316245b18619977305b9a4ee5599e3" title=" " alt="" coords="5,42,156,67"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="770,59,736,60,204,60,156,59,156,54,204,55,736,55,770,54"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1Logger.html#a7147508c1bf3630d8d881d52981c1d11" title=" " alt="" coords="397,5,543,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="577,28,543,28,543,23,577,23"/>
+<area shape="rect" id="Node000004" href="$classfinancesim_1_1Logger.html#aaa064f5fe53ffee99e7cef98a863ab09" title="Attach to an EventBus (starts logging)" alt="" coords="204,5,349,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="384,28,350,28,350,23,384,23"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="191,41,157,46,156,41,190,36"/>
+</map>

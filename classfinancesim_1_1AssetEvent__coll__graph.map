@@ -1,0 +1,5 @@
+<map id="financesim::AssetEvent" name="financesim::AssetEvent">
+<area shape="rect" id="Node000001" title="Event emitted when asset value changes." alt="" coords="5,79,180,104"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1Event.html" title="Base class for all typed events in the simulation." alt="" coords="23,5,162,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,44,95,79,90,79,90,44"/>
+</map>

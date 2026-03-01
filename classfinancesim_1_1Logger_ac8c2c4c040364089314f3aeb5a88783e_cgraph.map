@@ -1,0 +1,9 @@
+<map id="financesim::Logger::~Logger" name="financesim::Logger::~Logger">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,151,77"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1Logger.html#a3fca088413548c0c3a1d1e35510967dd" title="Detach from the current EventBus (stops logging)" alt="" coords="199,5,344,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,43,184,37,185,42,151,48"/>
+<area shape="rect" id="Node000004" href="$classfinancesim_1_1Logger.html#ac0c02b001c04c9071f06e94a6fa866dc" title="Flush all writers." alt="" coords="199,69,344,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,67,185,72,184,78,150,72"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1EventBus.html#a951ce440a81e66e80af19bce94e547b3" title="Unsubscribe using subscription ID." alt="" coords="392,5,555,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,23,378,23,378,28,344,28"/>
+</map>

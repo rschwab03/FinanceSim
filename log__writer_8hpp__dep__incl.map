@@ -1,0 +1,12 @@
+<map id="src/core/log_writer.hpp" name="src/core/log_writer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="78,5,247,31"/>
+<area shape="rect" id="Node000002" href="$bindings_8cpp.html" title=" " alt="" coords="5,152,192,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,38,90,56,69,80,65,98,70,117,90,150,86,153,65,119,60,98,64,77,87,52,115,34"/>
+<area shape="rect" id="Node000003" href="$log__writer_8cpp.html" title=" " alt="" coords="79,79,247,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,44,165,79,160,79,160,44"/>
+<area shape="rect" id="Node000004" href="$logger_8hpp.html" title=" " alt="" coords="271,79,417,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,33,315,76,313,81,203,38"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="292,110,139,154,138,149,291,105"/>
+<area shape="rect" id="Node000005" href="$logger_8cpp.html" title=" " alt="" coords="272,152,416,177"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="347,118,347,152,341,152,341,118"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="financesim::IncomeBase::emit" name="financesim::IncomeBase::emit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,187,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="55,30,53,20,59,10,74,5,96,3,122,6,136,13,133,18,120,11,96,8,75,10,62,15,58,21,60,28"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1EventBus.html#a94b4690f4c8a00f2e9fd395bfc7a3b4d" title="Publish an event to all subscribers." alt="" coords="235,29,397,69"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="187,47,221,47,221,52,187,52"/>
+</map>

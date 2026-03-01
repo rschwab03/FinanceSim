@@ -1,0 +1,6 @@
+<map id="financesim::IncomeBase::emit" name="financesim::IncomeBase::emit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="217,29,399,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="345,18,332,11,308,8,287,10,274,15,270,21,272,28,267,30,265,20,271,10,286,5,308,3,334,6,348,13"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1CareerJob.html#a12aab3dfd0f8774d5899c6cd2ab8af35" title=" " alt="" coords="5,29,169,69"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="203,52,170,52,170,47,203,47"/>
+</map>

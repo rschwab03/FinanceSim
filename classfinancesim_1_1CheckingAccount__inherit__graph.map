@@ -1,0 +1,7 @@
+<map id="financesim::CheckingAccount" name="financesim::CheckingAccount">
+<area shape="rect" id="Node000001" title="Checking account &#45; the default income recipient, no interest earned." alt="" coords="5,152,219,177"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1AccountBase.html" title=" " alt="" coords="19,79,205,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,118,115,152,109,152,109,118"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1Model.html" title=" " alt="" coords="41,5,183,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,44,115,79,109,79,109,44"/>
+</map>

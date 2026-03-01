@@ -1,0 +1,25 @@
+<map id="financesim::AccountBase::initialize" name="financesim::AccountBase::initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,119,191,159"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1AccountBase.html#a8e5566e36e73fe4712c316080ccddb01" title=" " alt="" coords="239,5,455,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,117,173,78,238,41,261,32,263,37,240,46,176,83,124,121"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1AccountBase.html#ab551367fd2cc985c98c0aadfdc7fb4e1" title="Called when an expense event is routed to this account." alt="" coords="254,55,439,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,117,255,96,256,101,177,122"/>
+<area shape="rect" id="Node000007" href="$classfinancesim_1_1AccountBase.html#a5a7f0f423a2fa6193c44b3c118c5c359" title="Called when an income event is routed to this account." alt="" coords="254,119,439,159"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="191,137,240,137,240,142,191,142"/>
+<area shape="rect" id="Node000009" href="$classfinancesim_1_1AccountBase.html#a858abc266902f436adb7b18b77f534f4" title=" " alt="" coords="254,183,439,223"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="177,157,256,177,255,183,176,162"/>
+<area shape="rect" id="Node000010" href="$classfinancesim_1_1EventBus.html#a46561b352c68d6e754babc95ae91f1ee" title=" " alt="" coords="265,247,428,287"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="125,157,176,195,240,233,256,240,254,245,237,238,173,200,122,162"/>
+<area shape="rect" id="Node000004" href="$classfinancesim_1_1AccountBase.html#a92e881e34f26e1b4da68365d6dccdb7b" title=" " alt="" coords="736,89,921,129"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="430,53,488,43,553,37,621,36,689,45,738,60,782,80,780,85,736,65,687,50,621,42,553,42,489,48,431,58"/>
+<area shape="rect" id="Node000006" href="$classfinancesim_1_1AccountBase.html#abfa43f46290e17fa7ce5b26e8df444cd" title="Withdraw funds from the account." alt="" coords="503,59,688,99"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="440,74,489,75,489,80,440,79"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="787,89,785,79,791,70,806,64,829,62,855,65,869,72,866,77,853,70,829,67,807,69,795,74,790,80,792,88"/>
+<area shape="rect" id="Node000005" href="$classfinancesim_1_1EventBus.html#a94b4690f4c8a00f2e9fd395bfc7a3b4d" title="Publish an event to all subscribers." alt="" coords="969,89,1132,129"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="922,106,956,106,956,111,922,111"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="689,88,723,93,722,98,688,94"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="440,131,722,113,722,118,440,136"/>
+<area shape="rect" id="Node000008" href="$classfinancesim_1_1AccountBase.html#a71367336b1187fc22ec0d52e456b8e8a" title="Deposit funds into the account." alt="" coords="503,174,688,214"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="439,157,491,168,490,174,438,162"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="650,171,759,131,761,136,652,176"/>
+</map>

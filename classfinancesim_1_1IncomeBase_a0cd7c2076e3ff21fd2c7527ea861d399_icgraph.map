@@ -1,0 +1,5 @@
+<map id="financesim::IncomeBase::bus" name="financesim::IncomeBase::bus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="235,13,447,38"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1IncomeBase.html#a9b1630b3e739c56ea04a8756c7bd2f9f" title=" " alt="" coords="5,5,187,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,28,187,28,187,23,221,23"/>
+</map>

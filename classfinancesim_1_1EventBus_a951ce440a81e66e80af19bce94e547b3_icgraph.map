@@ -1,0 +1,17 @@
+<map id="financesim::EventBus::unsubscribe" name="financesim::EventBus::unsubscribe">
+<area shape="rect" id="Node000001" title="Unsubscribe using subscription ID." alt="" coords="689,177,852,217"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1Logger.html#a3fca088413548c0c3a1d1e35510967dd" title="Detach from the current EventBus (stops logging)" alt="" coords="476,92,621,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="704,175,601,135,602,130,706,170"/>
+<area shape="rect" id="Node000004" href="$bindings_8cpp.html#a38316245b18619977305b9a4ee5599e3" title=" " alt="" coords="5,70,156,95"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="675,212,576,219,456,218,392,214,328,205,264,193,203,174,169,158,138,137,92,97,96,93,141,133,172,154,205,170,266,187,329,200,393,209,456,213,575,213,675,207"/>
+<area shape="rect" id="Node000006" href="$classfinancesim_1_1AccountBase.html#a6eea63d281756ad22753b433f0a8b487" title="Reset model to initial state (for replay)" alt="" coords="456,235,641,275"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="680,223,627,237,626,232,679,218"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1Logger.html#aaa064f5fe53ffee99e7cef98a863ab09" title="Attach to an EventBus (starts logging)" alt="" coords="233,5,379,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="478,90,362,48,364,43,480,85"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="462,109,156,90,156,85,462,104"/>
+<area shape="rect" id="Node000005" href="$classfinancesim_1_1Logger.html#ac8c2c4c040364089314f3aeb5a88783e" title=" " alt="" coords="233,120,379,160"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="463,125,379,134,379,129,462,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,50,132,73,131,67,219,45"/>
+<area shape="rect" id="Node000007" href="$classfinancesim_1_1SavingsAccount.html#a3b19348784c076b8c842f0e14f01be97" title="Reset model to initial state (for replay)" alt="" coords="204,235,408,275"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="442,257,408,257,408,252,442,252"/>
+</map>

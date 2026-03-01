@@ -1,0 +1,11 @@
+<map id="financesim::Logger::on_event" name="financesim::Logger::on_event">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,151,77"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1Logger.html#a0b11431d5fa5276df39444402cd5a05b" title=" " alt="" coords="199,5,344,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,43,184,37,185,42,151,48"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1Logger.html#ab3ad68dc588095caba42cea9a75a8eab" title=" " alt="" coords="199,69,344,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,67,185,72,184,78,150,72"/>
+<area shape="rect" id="Node000004" href="$classfinancesim_1_1Event.html#a19b738c8da32a965cd45f4451e4dd1fc" title="Source model ID that generated this event." alt="" coords="392,37,539,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,75,378,69,379,74,345,80"/>
+<area shape="rect" id="Node000005" href="$classfinancesim_1_1Event.html#a5ef186440895e0f653bdaeb6a4ba0bc6" title="Returns the type name of this event (for debugging/logging)" alt="" coords="392,101,539,141"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="345,99,379,104,378,110,344,104"/>
+</map>

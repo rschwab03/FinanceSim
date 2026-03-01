@@ -1,0 +1,11 @@
+<map id="financesim::AccountBase::on_expense" name="financesim::AccountBase::on_expense">
+<area shape="rect" id="Node000001" title="Called when an expense event is routed to this account." alt="" coords="5,29,191,69"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1AccountBase.html#a92e881e34f26e1b4da68365d6dccdb7b" title=" " alt="" coords="472,29,657,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,44,239,43,424,43,458,43,458,49,424,48,239,48,191,49"/>
+<area shape="rect" id="Node000004" href="$classfinancesim_1_1AccountBase.html#abfa43f46290e17fa7ce5b26e8df444cd" title="Withdraw funds from the account." alt="" coords="239,57,424,97"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="191,58,226,62,225,67,191,63"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="523,30,521,20,527,10,542,5,565,3,591,6,605,13,602,18,589,11,565,8,543,10,531,15,526,21,528,28"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1EventBus.html#a94b4690f4c8a00f2e9fd395bfc7a3b4d" title="Publish an event to all subscribers." alt="" coords="705,29,868,69"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="658,47,692,47,692,52,658,52"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="424,64,458,59,459,65,425,69"/>
+</map>

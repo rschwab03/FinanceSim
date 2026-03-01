@@ -1,0 +1,19 @@
+<map id="financesim::Logger::attach" name="financesim::Logger::attach">
+<area shape="rect" id="Node000001" title="Attach to an EventBus (starts logging)" alt="" coords="5,69,151,109"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1Logger.html#a3fca088413548c0c3a1d1e35510967dd" title="Detach from the current EventBus (stops logging)" alt="" coords="207,5,353,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,67,202,47,204,52,143,72"/>
+<area shape="rect" id="Node000004" href="$classfinancesim_1_1Logger.html#a7147508c1bf3630d8d881d52981c1d11" title=" " alt="" coords="207,69,353,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,87,194,87,194,92,151,92"/>
+<area shape="rect" id="Node000009" href="$classfinancesim_1_1EventBus.html#a0d08247b7ecabcaeb0e224d3a432c261" title="Subscribe to all events." alt="" coords="199,133,361,173"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="143,107,204,127,202,132,141,112"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1EventBus.html#a951ce440a81e66e80af19bce94e547b3" title="Unsubscribe using subscription ID." alt="" coords="409,5,572,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,23,395,23,395,28,353,28"/>
+<area shape="rect" id="Node000005" href="$classfinancesim_1_1Logger.html#a0b11431d5fa5276df39444402cd5a05b" title=" " alt="" coords="418,69,563,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="353,87,404,87,404,92,353,92"/>
+<area shape="rect" id="Node000006" href="$classfinancesim_1_1Logger.html#ab3ad68dc588095caba42cea9a75a8eab" title=" " alt="" coords="418,133,563,173"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="347,107,412,127,411,132,346,112"/>
+<area shape="rect" id="Node000007" href="$classfinancesim_1_1Event.html#a19b738c8da32a965cd45f4451e4dd1fc" title="Source model ID that generated this event." alt="" coords="620,101,767,141"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="563,139,606,132,607,138,564,145"/>
+<area shape="rect" id="Node000008" href="$classfinancesim_1_1Event.html#a5ef186440895e0f653bdaeb6a4ba0bc6" title="Returns the type name of this event (for debugging/logging)" alt="" coords="620,165,767,205"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="564,162,607,169,606,174,563,167"/>
+</map>

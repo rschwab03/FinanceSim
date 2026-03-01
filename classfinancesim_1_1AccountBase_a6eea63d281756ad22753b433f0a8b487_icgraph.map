@@ -1,0 +1,5 @@
+<map id="financesim::AccountBase::reset" name="financesim::AccountBase::reset">
+<area shape="rect" id="Node000001" title="Reset model to initial state (for replay)" alt="" coords="257,5,443,45"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1SavingsAccount.html#a3b19348784c076b8c842f0e14f01be97" title="Reset model to initial state (for replay)" alt="" coords="5,5,209,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,28,209,28,209,23,244,23"/>
+</map>

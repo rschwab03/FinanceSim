@@ -1,0 +1,8 @@
+<map id="financesim::AccountBase::bus" name="financesim::AccountBase::bus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="491,42,707,67"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1AccountBase.html#af3f65334454741897f5b010c01ac9291" title=" " alt="" coords="257,5,443,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,43,443,39,443,34,478,38"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1SavingsAccount.html#a600cb6b50a2b708865e749567937daf6" title=" " alt="" coords="5,35,209,75"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="477,60,443,60,257,60,209,59,209,54,257,55,443,55,477,54"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,41,210,45,209,40,244,35"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="financesim::AccountBase::withdraw" name="financesim::AccountBase::withdraw">
+<area shape="rect" id="Node000001" title="Withdraw funds from the account." alt="" coords="5,29,191,69"/>
+<area shape="rect" id="Node000002" href="$classfinancesim_1_1AccountBase.html#a92e881e34f26e1b4da68365d6dccdb7b" title=" " alt="" coords="239,29,424,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,47,225,47,225,52,191,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="290,30,287,20,294,10,309,5,331,3,357,6,371,13,369,18,356,11,331,8,310,10,297,15,293,21,295,28"/>
+<area shape="rect" id="Node000003" href="$classfinancesim_1_1EventBus.html#a94b4690f4c8a00f2e9fd395bfc7a3b4d" title="Publish an event to all subscribers." alt="" coords="472,29,635,69"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="424,47,458,47,458,52,424,52"/>
+</map>
