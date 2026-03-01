@@ -1,6 +1,6 @@
 # FinanceSim Project Summary
 
-**Last updated:** 2026-01-30
+**Last updated:** 2026-02-01
 
 ## Project Overview
 
@@ -135,3 +135,5 @@ Account types:
 14. Account models use Schedule struct for configurable update rates
 15. Updated scheduler to skip models with rate <= 0 (event-driven only)
 16. Created `scenarios/with_accounts.py` test scenario
+17. Added `docs/scheduling.md` - Explains how the scheduling system works (Schedule struct, rates, event-driven vs scheduled)
+18. Added `docs/adding_a_model.md` - Beginner-friendly tutorial for creating new models with complete examples

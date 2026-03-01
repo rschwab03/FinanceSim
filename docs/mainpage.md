@@ -32,6 +32,8 @@ Immutable messages that carry information between models. Events are timestamped
 
 ### Getting Started
 - @subpage building_and_running "Building and Running"
+- @subpage adding_a_model "Adding a New Model" - Step-by-step tutorial for creating custom models
+- @subpage scheduling "How Scheduling Works" - Understanding model execution timing
 
 ### Core Framework
 - @ref financesim::EventBus "EventBus" - Central pub/sub message system
