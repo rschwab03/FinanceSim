@@ -10,7 +10,7 @@ add_library(financesim_models STATIC
     core/logger.cpp
     models/income/income_base.cpp
     models/income/career_job.cpp
-    models/expenses/expenses_base.cpp
+    models/Expense/Expense_base.cpp
     models/assets/assets_base.cpp
     models/liabilities/liabilities_base.cpp
     models/accounts/account_base.cpp

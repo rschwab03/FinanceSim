@@ -6,10 +6,10 @@ namespace financesim {
 
 /// Base class for expense models
 /// Derive from this to create specific expense types (rent, utilities, etc.)
-class ExpensesBase : public Model {
+class ExpenseBase : public Model {
 public:
-    ExpensesBase(std::string id, std::string name, Schedule schedule);
-    virtual ~ExpensesBase() = default;
+    ExpenseBase(std::string id, std::string name, Schedule schedule);
+    virtual ~ExpenseBase() = default;
 
     const std::string& id() const override { return id_; }
     const std::string& name() const override { return name_; }

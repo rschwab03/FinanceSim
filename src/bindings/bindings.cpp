@@ -11,7 +11,7 @@
 #include "core/logger.hpp"
 #include "models/income/income_base.hpp"
 #include "models/income/career_job.hpp"
-#include "models/expenses/expenses_base.hpp"
+#include "models/Expense/Expense_base.hpp"
 #include "models/assets/assets_base.hpp"
 #include "models/liabilities/liabilities_base.hpp"
 #include "models/accounts/account_base.hpp"
@@ -118,7 +118,7 @@ PYBIND11_MODULE(financesim_cpp, m) {
         .def("annual_salary", &CareerJob::annual_salary)
         .def("payment_amount", &CareerJob::payment_amount);
 
-    py::class_<ExpensesBase, Model, std::shared_ptr<ExpensesBase>>(m, "ExpensesBase")
+    py::class_<ExpenseBase, Model, std::shared_ptr<ExpenseBase>>(m, "ExpenseBase")
         .def(py::init<std::string, std::string, Schedule>());
 
     py::class_<AssetsBase, Model, std::shared_ptr<AssetsBase>>(m, "AssetsBase")
